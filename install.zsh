@@ -51,3 +51,6 @@ fi
 echo "### updating global .zshenv file"
 sudo cp ./zsh/.zshenv /etc/zshenv
 echo "### global .zshenv file has been updated"
+echo "### changing shell"
+chsh -s $(which zsh)
+echo "### shell updated to zsh"
