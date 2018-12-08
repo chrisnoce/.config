@@ -1,0 +1,9 @@
+# Aliases Database
+
+alias ll='ls -aG'
+alias zshconfig='vim ${ZDOTDIR}/.zshrc'
+alias zshreset='source ${ZDOTDIR}/.zshrc'
+alias vimconfig='vim ~/.dotfiles/vim/.vimrc'
+alias ls='ls -G'
+alias l='ls -lG'
+alias git='HOME=~/.dotfiles/git/ git'
