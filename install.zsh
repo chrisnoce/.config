@@ -47,10 +47,12 @@ if [[ "$OSTYPE" == "linux"* ]]; then
     done
 fi
 
-# update global .zshenv file to properly declare {$ZDOTDIR}
+# append text to global .zshenv file to properly declare {$ZDOTDIR}
 echo "### updating global .zshenv file"
-sudo cp ./zsh/.zshenv /etc/zshenv
+sudo cat ./zsh/.zshenv >>/etc/zsh/zshenv
 echo "### global .zshenv file has been updated"
+
+# update shell to #!/usr/bin/env zsh
 echo "### changing shell"
 chsh -s $(which zsh)
 echo "### shell updated to zsh"
