@@ -31,8 +31,8 @@ ehthumbs.db
 Thumbs.db
 
 # Custom
-./vim/autoload/
-./vim/plugged/
-./zsh/.zplug/
-./zsh/.zcompdump
-./zsh/.zhistory
+vim/autoload/
+vim/plugged/
+zsh/.zplug/
+.zcompdump
+.zhistory
