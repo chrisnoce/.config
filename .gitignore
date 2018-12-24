@@ -1,6 +1,6 @@
 ./vim/autoload/
 ./vim/plugged
-./zsh/zplug
+./zsh/.zplug
 ./zsh/.zcompdump
 ./zsh/.zhistory
 
