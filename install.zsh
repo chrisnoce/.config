@@ -56,3 +56,4 @@ echo "### global .zshenv file has been updated"
 echo "### changing shell"
 chsh -s $(which zsh)
 echo "### shell updated to zsh"
+zsh
