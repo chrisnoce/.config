@@ -9,6 +9,8 @@ packages=(
     git
     vim
     fzy
+    mosh
+    gawk
 )
 
 # install packages in array, dependent on OS
