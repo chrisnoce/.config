@@ -27,7 +27,7 @@ colorscheme onedark
 
 " lightline
 let g:lightline = {
-            \ 'colorscheme': 'one',
+            \ 'colorscheme': 'onedark',
             \ }
 set laststatus=2
 set noshowmode
