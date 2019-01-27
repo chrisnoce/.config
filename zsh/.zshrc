@@ -48,7 +48,7 @@ source $ALIASDB
     zplug 'zsh-users/zsh-syntax-highlighting'
     zplug 'denysdovhan/spaceship-prompt'
     zplug 'tarrasch/zsh-autoenv'
-    zplug 'b4b4r07/enhancd', use:init.sh # needs fzy installed (jhawthorn/fzy)
+    # zplug 'b4b4r07/enhancd', use:init.sh # needs fzy installed (jhawthorn/fzy)
     zplug 'zsh-users/zsh-autosuggestions'
 
     # Install plugins if there are plugins that have not been installed
@@ -60,9 +60,9 @@ source $ALIASDB
     fi
 
     # Source plugins and add commands to $PATH
-    zplug load --verbose
+    zplug load # --verbose
 
 # End ZPlug
 
 # RBENV
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"

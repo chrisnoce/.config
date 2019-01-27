@@ -8,9 +8,9 @@ packages=(
     zsh
     git
     vim
-    fzy
+    # fzy
     mosh
-    gawk
+    # gawk
 )
 
 # install packages in array, dependent on OS
@@ -53,6 +53,9 @@ fi
 echo "### updating global .zshenv file"
 sudo tee -a /etc/zsh/zshenv < ./zsh/.zshenv
 echo "### global .zshenv file has been updated"
+
+# disable bash history file creation
+echo "set +o history" | sudo tee -a /etc/profile
 
 # update shell to #!/usr/bin/env zsh
 echo "### changing shell"
