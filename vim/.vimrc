@@ -14,21 +14,20 @@ endif
 call plug#begin('$HOME/.dotfiles/vim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-sensible'
-Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
 Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
+" Plug 'plasticboy/vim-markdown'
 Plug 'junegunn/goyo.vim'
-Plug 'cespare/vim-toml'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " color scheme
 syntax enable
-set background=dark
-colorscheme gruvbox
+colorscheme onedark
 
 " lightline
 let g:lightline = {
-            \ 'colorscheme': 'gruvbox',
+            \ 'colorscheme': 'one',
             \ }
 set laststatus=2
 set noshowmode
