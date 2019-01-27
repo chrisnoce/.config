@@ -51,7 +51,7 @@ fi
 
 # append text to global .zshenv file to properly declare {$ZDOTDIR}
 echo "### updating global .zshenv file"
-sudo tee /etc/zsh/zshenv < ./zsh/.zshenv
+sudo tee -a /etc/zsh/zshenv < ./zsh/.zshenv
 echo "### global .zshenv file has been updated"
 
 # update shell to #!/usr/bin/env zsh
