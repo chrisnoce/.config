@@ -1,10 +1,10 @@
 # Aliases Database
 
-alias ll='ls -aG'
+alias ll='ls -a --color'
 alias zshconfig='vim ${ZDOTDIR}/.zshrc'
 alias zshreset='source ${ZDOTDIR}/.zshrc'
 alias vimconfig='vim ~/.dotfiles/vim/.vimrc'
-alias ls='ls -G'
-alias l='ls -lG'
+alias ls='ls --color'
+alias l='ls -l --color'
 alias git='HOME=~/.dotfiles/git/ git'
 alias consoleconfig='sudo dpkg-reconfigure console-setup'
