@@ -10,7 +10,7 @@ packages=(
     vim
     # fzy
     mosh
-    # gawk
+    gawk # zplug dependency
 )
 
 # install packages in array, dependent on OS
@@ -41,7 +41,7 @@ fi
 if [[ "$OSTYPE" == "linux"* ]]; then
     for package in ${packages[@]}; do
         if [ $(dpkg-query -W -f='${Status}' $package  2>/dev/null | grep -c "ok installed") -eq 0 ]; then
-            sudo apt-get install $package
+            sudo apt-get install -y $package
             echo "# $package was installed"
         else
             echo "$package is already installed"
