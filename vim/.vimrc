@@ -19,6 +19,7 @@ Plug 'godlygeek/tabular'
 " Plug 'plasticboy/vim-markdown'
 Plug 'junegunn/goyo.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'tmux-plugins/vim-tmux'
 call plug#end()
 
 " color scheme
