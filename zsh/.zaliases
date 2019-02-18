@@ -1,11 +1,20 @@
 # Aliases Database
 
-alias ll='ls -la --color'
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  alias ll='ls -la -G'
+  alias ls='ls -G'
+  alias l='ls -l -G'
+fi
+
+if [[ "$OSTYPE" == "linux"* ]]; then
+  alias ll='ls -la --color'
+  alias ls='ls --color'
+  alias l='ls -l --color'
+fi
+
 alias zshconfig='vim ${ZDOTDIR}/.zshrc'
 alias zshreset='source ${ZDOTDIR}/.zshrc'
 alias vimconfig='vim ~/.dotfiles/vim/.vimrc'
-alias ls='ls --color'
-alias l='ls -l --color'
 alias git='HOME=~/.dotfiles/git/ git'
 alias consoleconfig='sudo dpkg-reconfigure console-setup'
 alias tmuxconfig='vim ~/.dotfiles/tmux/tmux.conf'
