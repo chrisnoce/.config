@@ -8,7 +8,6 @@ alias l='ls -lG'
 fi
 
 # Linux Directory Commands
-
 if [[ "$OSTYPE" == "linux"* ]]; then
 alias ll='ls -la --color'
 alias ls='ls --color'
