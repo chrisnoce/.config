@@ -10,6 +10,7 @@ setopt autocd
 export MYVIMRC='$HOME/.dotfiles/vim/.vimrc'
 export VIMINIT='source $MYVIMRC'
 export ZPLUG_HOME=${ZDOTDIR}/.zplug
+export GNUPGHOME='$HOME/.dotfiles/.gnupg'
 
 # Colors
 export TERM='xterm-256color'

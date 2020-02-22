@@ -36,3 +36,4 @@ vim/plugged/
 zsh/.zplug/
 .zcompdump
 .zhistory
+.gnupg
