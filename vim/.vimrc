@@ -14,20 +14,23 @@ endif
 call plug#begin('$HOME/.dotfiles/vim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-sensible'
-Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/onedark.vim'
 Plug 'godlygeek/tabular'
 " Plug 'plasticboy/vim-markdown'
 Plug 'junegunn/goyo.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'fxn/vim-monochrome'
+Plug 'supercollider/scvim'
 call plug#end()
 
 " color scheme
 syntax enable
-colorscheme onedark
+leg g:monochrome_italic_comments = 1
+colorscheme monochrome
 
 " lightline
 let g:lightline = {
-            \ 'colorscheme': 'onedark',
+            \ 'colorscheme': 'nord',
             \ }
 set laststatus=2
 set noshowmode
