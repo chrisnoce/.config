@@ -1,17 +1,17 @@
 " set runtime
-set runtimepath=$HOME/.dotfiles/vim/,$VIMRUNTIME
+set runtimepath=$HOME/.config/vim/,$VIMRUNTIME
 
 " vim-plug, plugins
 
 " auto-install script, defaults
-if empty(glob('$HOME/.dotfiles/vim/autoload/plug.vim'))
-  silent !curl -fLo $HOME/.dotfiles/vim/autoload/plug.vim --create-dirs
+if empty(glob('$HOME/.config/vim/autoload/plug.vim'))
+  silent !curl -fLo $HOME/.config/vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 " load plugins
-call plug#begin('$HOME/.dotfiles/vim/plugged')
+call plug#begin('$HOME/.config/vim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-sensible'
 " Plug 'joshdick/onedark.vim'

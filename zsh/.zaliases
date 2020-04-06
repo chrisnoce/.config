@@ -16,10 +16,11 @@ fi
 
 # Config
 alias zshconfig='vim ${ZDOTDIR}/.zshrc'
-alias vimconfig='vim ~/.dotfiles/vim/.vimrc'
+alias vimconfig='vim ~/.config/vim/.vimrc'
 alias consoleconfig='sudo dpkg-reconfigure console-setup'
-alias tmuxconfig='vim ~/.dotfiles/tmux/tmux.conf'
+alias tmuxconfig='vim ~/.config/tmux/tmux.conf'
+alias i3config='vim ~/.config/i3/config'
 
 # Utility
 alias zshreset='source ${ZDOTDIR}/.zshrc'
-alias git='HOME=~/.dotfiles/git/ git'
+alias git='HOME=~/.config/git/ git'

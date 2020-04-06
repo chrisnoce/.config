@@ -7,10 +7,10 @@ bindkey '\e[A' history-search-backward
 
 # Options, Environment
 setopt autocd
-export MYVIMRC='$HOME/.dotfiles/vim/.vimrc'
+export MYVIMRC='$HOME/.config/vim/.vimrc'
 export VIMINIT='source $MYVIMRC'
 export ZPLUG_HOME=${ZDOTDIR}/.zplug
-export GNUPGHOME='$HOME/.dotfiles/.gnupg'
+export GNUPGHOME='$HOME/.config/.gnupg'
 
 # Colors
 export TERM='xterm-256color'

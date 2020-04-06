@@ -1,5 +1,5 @@
 # set dotdir
-if [[ -d "$HOME/.dotfiles/zsh" ]]
+if [[ -d "$HOME/.config/zsh" ]]
 then
-        export ZDOTDIR="$HOME/.dotfiles/zsh"
+        export ZDOTDIR="$HOME/.config/zsh"
 fi
