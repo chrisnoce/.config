@@ -51,7 +51,7 @@ fi
 
 # append text to global .zshenv file to properly declare {$ZDOTDIR}
 echo -e "\e[95m### updating global .zshenv file\e[0m"
-sudo tee -a /etc/zsh/zshenv < ./zsh/.zshenv
+sudo tee -a /etc/zsh/zshenv < ~/.dotfiles/zsh/.zshenv
 echo -e "\e[95m### global .zshenv file has been updated\e[0m"
 
 # disable bash history file creation
