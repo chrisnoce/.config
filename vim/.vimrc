@@ -25,7 +25,7 @@ call plug#end()
 
 " color scheme
 syntax enable
-leg g:monochrome_italic_comments = 1
+let g:monochrome_italic_comments = 1
 colorscheme monochrome
 
 " lightline
